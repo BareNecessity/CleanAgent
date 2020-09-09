@@ -47,7 +47,9 @@
         app:layout_constraintTop_toBottomOf="@+id/Create"/>
    <RelativeLayout
        android:layout_width="match_parent"
-       android:layout_height="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="5dp"
+       android:background="@drawable/myshape_bg"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintTop_toBottomOf="@+id/New"/>
