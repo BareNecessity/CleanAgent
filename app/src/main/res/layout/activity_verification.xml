@@ -7,4 +7,128 @@
     tools:context=".Verification">
 
 
+    <ImageView
+        android:id="@+id/BackArrow3"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        android:contentDescription="Back Arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    
+    <TextView
+        android:id="@+id/Your"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BackArrow3"/>
+    <TextView
+        android:id="@+id/VerificationCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verification Code"
+        android:textSize="35sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Your"/>
+
+    <TextView
+        android:id="@+id/OneTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="a One time PIN has been sent to you"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VerificationCode"/>
+
+    <TextView
+        android:id="@+id/PhoneVer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="phone for verification please input the code"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OneTime"/>
+    <EditText
+        android:id="@+id/EditVer"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneVer"/>
+    <EditText
+        android:id="@+id/EditVer2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/circle"
+        app:layout_constraintStart_toEndOf="@+id/EditVer"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneVer"/>
+
+    <EditText
+        android:id="@+id/EditVer3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/circle"
+        app:layout_constraintStart_toEndOf="@+id/EditVer2"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneVer"/>
+
+    <EditText
+        android:id="@+id/EditVer4"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/circle"
+        app:layout_constraintStart_toEndOf="@+id/EditVer3"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneVer"/>
+
+    <EditText
+        android:id="@+id/EditVer5"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/circle"
+        app:layout_constraintStart_toEndOf="@+id/EditVer4"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneVer"/>
+    <EditText
+        android:id="@+id/EditVer6"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/circle"
+        app:layout_constraintStart_toEndOf="@+id/EditVer5"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneVer"/>
+
+
+
+
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
