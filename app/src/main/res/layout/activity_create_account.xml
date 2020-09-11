@@ -23,7 +23,7 @@
         android:id="@+id/Create"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Create a"
+        android:text="Create a\nnew Account"
         android:textSize="35sp"
         android:textColor="#00ccff"
         android:layout_marginTop="10dp"
@@ -33,18 +33,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/BackArrow2"/>
-    <TextView
-        android:id="@+id/New"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="new Account"
-        android:textSize="35sp"
-        android:textColor="#00ccff"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Create"/>
 
 
 
@@ -61,7 +49,7 @@
         android:layout_marginEnd="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/New"/>
+        app:layout_constraintTop_toBottomOf="@+id/Create"/>
 
 
     <EditText
