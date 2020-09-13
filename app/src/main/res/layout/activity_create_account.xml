@@ -68,7 +68,7 @@
         <EditText
             android:id="@+id/EnterEmail"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:background="@drawable/edittext_bg"
             android:layout_marginTop="5dp"
             android:layout_marginStart="20dp"
@@ -93,7 +93,7 @@
         <EditText
             android:id="@+id/EditMobile"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:background="@drawable/edittext_bg"
             android:layout_marginTop="5dp"
             android:layout_marginStart="20dp"
@@ -118,7 +118,7 @@
         <EditText
             android:id="@+id/EditTextPassword"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:background="@drawable/edittext_bg"
             android:layout_marginTop="5dp"
             android:layout_marginStart="20dp"
@@ -142,7 +142,7 @@
         <EditText
             android:id="@+id/EditLogPassword"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:background="@drawable/edittext_bg"
             android:layout_marginTop="5dp"
             android:layout_marginStart="20dp"
@@ -153,10 +153,10 @@
         <Button
             android:id="@+id/ButtonCreate"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:text="Create Account"
             android:textAllCaps="false"
-            android:background="@drawable/edittext_bg"
+            android:background="@drawable/button_bg"
             android:layout_marginTop="30dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"

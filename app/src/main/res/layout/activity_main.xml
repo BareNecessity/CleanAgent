@@ -23,6 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Password Reset"
+        android:textStyle="bold"
         android:textSize="30sp"
         android:textColor="#00ccff"
         android:layout_marginTop="10dp"
@@ -36,7 +37,7 @@
         android:id="@+id/NewPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enter your password"
+        android:text="Enter new password"
         android:textSize="15sp"
         android:textStyle="bold"
         android:layout_marginTop="60dp"
@@ -49,7 +50,7 @@
     <EditText
         android:id="@+id/EditPassword"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginEnd="20dp"
@@ -75,7 +76,7 @@
     <EditText
         android:id="@+id/EditConfirmPassword"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:background="@drawable/edittext_bg"
         android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
@@ -89,7 +90,7 @@
     <Button
         android:id="@+id/ResetButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:text="Reset password"
         android:textSize="15sp"
         android:textAllCaps="false"
