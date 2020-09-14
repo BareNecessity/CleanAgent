@@ -50,12 +50,12 @@
         android:id="@+id/Constraint"
         android:layout_width="403dp"
         android:layout_height="623dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/myshape_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Create"
+        app:layout_constraintTop_toBottomOf="@id/Create"g
         app:layout_constraintVertical_bias="0.489">
 
         <TextView
