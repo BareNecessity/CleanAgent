@@ -107,7 +107,7 @@
         android:id="@+id/CashOnDeliveryConstraint"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="#ffffff"
+        android:background="@drawable/payment"
         android:layout_marginTop="20dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
@@ -145,10 +145,9 @@
             android:textStyle="bold"
             android:textSize="17sp"
             android:layout_marginTop="10dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginLeft="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/TextCashOnDelivery"
             app:layout_constraintEnd_toEndOf="parent"/>
 
 
@@ -160,7 +159,7 @@
         android:id="@+id/CardPaymentConstraint"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="#ffffff"
+        android:background="@drawable/payment"
         android:layout_marginTop="10dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
@@ -198,10 +197,9 @@
             android:textStyle="bold"
             android:textSize="17sp"
             android:layout_marginTop="10dp"
-            android:layout_marginStart="160dp"
-            android:layout_marginLeft="160dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/TextCard"
             app:layout_constraintEnd_toEndOf="parent"/>
 
 
@@ -215,7 +213,7 @@
         android:id="@+id/WalletPaymentConstraint"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="#ffffff"
+        android:background="@drawable/payment"
         android:layout_marginTop="10dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
@@ -249,15 +247,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="8dp"
             android:text="#2,600"
-            android:textStyle="bold"
             android:textSize="17sp"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="120dp"
-            android:layout_marginLeft="120dp"
-            app:layout_constraintTop_toTopOf="@id/WalletPaymentConstraint"
-            app:layout_constraintStart_toEndOf="@+id/TextWallet"
-            app:layout_constraintEnd_toEndOf="@+id/WalletPaymentConstraint"/>
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/WalletPaymentConstraint"
+            app:layout_constraintTop_toTopOf="@id/WalletPaymentConstraint" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -265,7 +262,7 @@
         android:id="@+id/CouponDiscountConstraint"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="#e6ebe7"
+        android:background="@drawable/coupon"
         android:layout_marginTop="10dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
@@ -305,10 +302,9 @@
             android:textStyle="bold"
             android:textSize="17sp"
             android:layout_marginTop="10dp"
-            android:layout_marginStart="55dp"
-            android:layout_marginLeft="55dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/TextCouponDiscount"
             app:layout_constraintEnd_toEndOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -317,7 +313,7 @@
         android:id="@id/EnterCouponConstraint"
         android:layout_width="match_parent"
         android:layout_height="180dp"
-        android:background="#ffffff"
+        android:background="@drawable/payment"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         app:layout_constraintTop_toBottomOf="@id/CouponDiscountConstraint"

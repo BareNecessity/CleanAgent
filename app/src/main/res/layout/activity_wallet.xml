@@ -179,9 +179,8 @@
         android:textStyle="italic"
         android:textColor="#1f2120"
         android:layout_marginTop="30dp"
-        android:layout_marginStart="170dp"
-        android:layout_marginEnd="170dp"
-        app:layout_constraintStart_toEndOf="@+id/TextCredit"
+        android:layout_marginEnd="20dp"
+       app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/History"/>
 
     <TextView
@@ -218,9 +217,9 @@
         android:textStyle="italic"
         android:textColor="#1f2120"
         android:layout_marginTop="80dp"
-        android:layout_marginStart="175dp"
-        android:layout_marginEnd="175dp"
-        app:layout_constraintStart_toEndOf="@+id/TextCredit1"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+       app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/History"/>
 
     <TextView
@@ -258,9 +257,9 @@
         android:textStyle="italic"
         android:textColor="#1f2120"
         android:layout_marginTop="130dp"
-        android:layout_marginStart="170dp"
-        android:layout_marginEnd="170dp"
-        app:layout_constraintStart_toEndOf="@+id/TextCredit2"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/History"/>
 
 
@@ -299,9 +298,9 @@
         android:textStyle="italic"
         android:textColor="#1f2120"
         android:layout_marginTop="180dp"
-        android:layout_marginStart="175dp"
-        android:layout_marginEnd="175dp"
-        app:layout_constraintStart_toEndOf="@+id/TextCredit3"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/History"/>
 
 

@@ -140,6 +140,15 @@
             app:layout_constraintStart_toStartOf="@+id/TermsConstraint"
             app:layout_constraintBottom_toBottomOf="@+id/TermsConstraint"/>
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_arrow_forward_ios_24"
+            app:layout_constraintStart_toEndOf="@+id/TermsPolicyTextView"
+            app:layout_constraintEnd_toEndOf="@+id/TermsConstraint"
+            app:layout_constraintTop_toTopOf="@+id/TermsConstraint"
+            app:layout_constraintBottom_toBottomOf="@+id/TermsConstraint"/>
+
 
 
 
