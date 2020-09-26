@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LaundryRecords"></activity>
+        <activity android:name=".CallPayment"></activity>
+        <activity android:name=".Urgent" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".LogIn" />
+        <activity android:name=".WelcomeBack" />
+        <activity android:name=".LaundryRecords" />
         <activity android:name=".PaymentPage" />
         <activity android:name=".OrderStatus" />
         <activity android:name=".Request" />

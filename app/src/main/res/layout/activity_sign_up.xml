@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+
+    <ImageView
+        android:id="@+id/BackArrowSignUp"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        android:contentDescription="Back Arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/SignUpImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/welcome"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintForSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:background="@drawable/login"
+        android:layout_marginTop="140dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <TextView
+            android:id="@+id/EditFullNameSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Full Name"
+            android:textSize="15sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintTop_toTopOf="@id/ConstraintForSignUp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <EditText
+            android:id="@+id/EditMuhammadKolim"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/log"
+            android:hint="  Muhammad Kolim"
+            android:textColorHint="#0d0c0b"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/EditFullNameSignUp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/TextEmailSignUpInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Email Address"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/EditMuhammadKolim"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <EditText
+            android:id="@+id/EditInfoSignUpMail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/log"
+            android:hint="  info@yourgmail.com"
+            android:textColorHint="#0d0c0b"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/TextEmailSignUpInfo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/TextPassWordSignUP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Password"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintTop_toBottomOf="@id/EditInfoSignUpMail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <EditText
+            android:id="@+id/EditPassWordSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/log"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TextPassWordSignUP" />
+
+        <Button
+            android:id="@+id/SignUpButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:background="@drawable/sign"
+            android:textAllCaps="false"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/EditPassWordSignUp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/OrSignUP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#e66093"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SignUpButton" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/facebookConstraint"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/socials"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/OrSignUP">
+
+
+            <ImageView
+                android:id="@+id/facebookLogo"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/facebook"
+                app:layout_constraintBottom_toBottomOf="@id/facebookConstraint"
+                app:layout_constraintStart_toStartOf="@+id/facebookConstraint"
+                app:layout_constraintTop_toTopOf="@+id/facebookConstraint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="facebook"
+                android:textSize="20sp"
+                android:textColor="#7f95bb"
+                android:textStyle="bold"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/facebookConstraint"
+                app:layout_constraintEnd_toEndOf="@+id/facebookConstraint"
+                app:layout_constraintTop_toTopOf="@+id/facebookConstraint" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/googleConstraint"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/socials"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/OrSignUP"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:background="@drawable/google"
+                app:layout_constraintTop_toTopOf="@+id/googleConstraint"
+                app:layout_constraintStart_toStartOf="@+id/googleConstraint"
+                app:layout_constraintBottom_toBottomOf="@+id/googleConstraint"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Google"
+                android:textColor="#7f95bb"
+                android:textSize="20sp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toTopOf="@+id/googleConstraint"
+                app:layout_constraintEnd_toEndOf="@id/googleConstraint"
+                app:layout_constraintBottom_toBottomOf="@+id/googleConstraint"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/TextNoAccountLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            app:layout_constraintTop_toBottomOf="@+id/facebookConstraint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign UP"
+            android:textSize="15sp"
+            android:textColor="#e66093"
+            android:layout_marginEnd="100dp"
+            android:layout_marginStart="100dp"
+            app:layout_constraintTop_toBottomOf="@+id/googleConstraint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#09c1a7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CallPayment">
+
+
+   <TextView
+       android:id="@+id/CallText"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Call Payment"
+       android:textStyle="bold"
+       android:textSize="20sp"
+       android:textColor="#ffffff"
+       android:layout_marginTop="20dp"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/CallConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/urgent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CallText">
+
+
+        <TextView
+            android:id="@+id/TotalCostText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Cost"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#0d0c0b"
+            android:layout_marginTop="60dp"
+            app:layout_constraintTop_toTopOf="@id/CallConstraint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/CostPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$250"
+            android:textSize="60sp"
+            android:textColor="#16bda0"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/TotalCostText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/ChooseCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Your Payment Method"
+            android:textSize="23sp"
+            android:textColor="#0d0c0b"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/CostPrice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/CardConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/card"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/ChooseCard"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/CardImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_baseline_credit_card_24"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintTop_toTopOf="@+id/CardConstraint"
+                app:layout_constraintStart_toStartOf="@+id/CardConstraint"
+                app:layout_constraintBottom_toBottomOf="@+id/CardConstraint"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credit Card"
+                android:textSize="30sp"
+                android:textColor="#0d0c0b"
+                app:layout_constraintTop_toTopOf="@+id/CardConstraint"
+                app:layout_constraintStart_toStartOf="@+id/CardConstraint"
+                app:layout_constraintEnd_toEndOf="@id/CardConstraint"
+                app:layout_constraintBottom_toBottomOf="@id/CardConstraint"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/AddTextCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Payment Method"
+            android:textSize="25sp"
+            android:textColor="#a3ded5"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/CardConstraint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <Button
+            android:id="@+id/RequestButtonUrgent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/requestdoctor"
+            android:text="Pay"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AddTextCard" />
+
+
+
+
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
