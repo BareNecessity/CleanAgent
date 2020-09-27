@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#341d92"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinancialHelp">
+
+
+    <ImageView
+        android:id="@+id/ListImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_format_list_bulleted_24"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_notifications_finance"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/FinancialHelpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Financial help"
+        android:textSize="35sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/ListImage"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/CurrentBalanceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Balance"
+        android:textSize="25sp"
+        android:textColor="#5d4dac"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/FinancialHelpText"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/BalanceFigure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$4580.00"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/CurrentBalanceText"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ArrowUp"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_baseline_arrow_drop_up_24"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintTop_toBottomOf="@id/BalanceFigure"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/UpBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="$ 12540.00"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/ArrowUp"
+        app:layout_constraintTop_toBottomOf="@+id/BalanceFigure" />
+
+    <ImageView
+        android:id="@+id/DownArrowImage"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_baseline_arrow_drop_down_24"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/BalanceFigure"
+        app:layout_constraintStart_toEndOf="@id/UpBalance"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 6960.00"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="37dp"
+        app:layout_constraintTop_toBottomOf="@id/BalanceFigure"
+        app:layout_constraintStart_toEndOf="@id/DownArrowImage"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/TransactionConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_marginTop="360dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction"
+            android:textColor="#0d0c0b"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toTopOf="@+id/TransactionConstraint"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_linear_scale_24"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            app:layout_constraintTop_toTopOf="@+id/TransactionConstraint"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ExtraOne"
+            android:layout_width="10dp"
+            android:layout_height="60dp"
+            android:background="@drawable/extra"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toTopOf="@+id/TransactionConstraint"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/JohnConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/extract"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toTopOf="@id/TransactionConstraint"
+            app:layout_constraintStart_toEndOf="@id/ExtraOne">
+
+            <ImageView
+                android:id="@+id/JohnImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/adult"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintTop_toTopOf="@id/JohnConstraint"
+                app:layout_constraintStart_toStartOf="@id/JohnConstraint"/>
+            <TextView
+                android:id="@+id/JohnName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Doo"
+                android:textSize="20sp"
+                android:textColor="#0d0c0b"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintTop_toTopOf="@+id/JohnConstraint"
+                app:layout_constraintStart_toEndOf="@+id/JohnImage"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14 Nov,2019"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/JohnName"
+                app:layout_constraintStart_toEndOf="@+id/JohnImage"
+                app:layout_constraintBottom_toBottomOf="@id/JohnConstraint"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_baseline_arrow_drop_up_24"
+                android:layout_marginEnd="60dp"
+                android:layout_marginStart="60dp"
+                app:layout_constraintTop_toTopOf="@+id/JohnConstraint"
+                app:layout_constraintEnd_toEndOf="@+id/JohnConstraint"
+                app:layout_constraintBottom_toBottomOf="@+id/JohnConstraint"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$24.00"
+                android:textColor="#2ac401"
+                android:textSize="15sp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toTopOf="@+id/JohnConstraint"
+                app:layout_constraintEnd_toEndOf="@id/JohnConstraint"
+                app:layout_constraintBottom_toBottomOf="@id/JohnConstraint"/>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ExtraTwo"
+            android:layout_width="10dp"
+            android:layout_height="60dp"
+            android:background="@drawable/extra"
+            android:layout_marginTop="140dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toTopOf="@+id/TransactionConstraint"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/KoomoConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/extract"
+            app:layout_constraintStart_toEndOf="@id/ExtraTwo"
+            app:layout_constraintTop_toTopOf="@id/TransactionConstraint">
+
+            <ImageView
+                android:id="@+id/KoomoImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/femaleadult"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintTop_toTopOf="@id/KoomoConstraint"
+                app:layout_constraintStart_toStartOf="@id/KoomoConstraint"
+                app:layout_constraintBottom_toBottomOf="@id/KoomoConstraint"/>
+
+            <TextView
+                android:id="@+id/KoomoName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Koomo Mon"
+                android:textSize="20sp"
+                android:textColor="#0d0c0b"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintTop_toTopOf="@+id/KoomoConstraint"
+                app:layout_constraintStart_toEndOf="@+id/KoomoImage"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 Nov,2019"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/KoomoName"
+                app:layout_constraintStart_toEndOf="@+id/KoomoImage"
+                app:layout_constraintBottom_toBottomOf="@id/KoomoConstraint"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_baseline_arrow_drop_down_24"
+                android:layout_marginEnd="60dp"
+                android:layout_marginStart="60dp"
+                app:layout_constraintTop_toTopOf="@+id/KoomoConstraint"
+                app:layout_constraintEnd_toEndOf="@+id/KoomoConstraint"
+                app:layout_constraintBottom_toBottomOf="@+id/KoomoConstraint"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$60.00"
+                android:textColor="#fe4a4a"
+                android:textSize="15sp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toTopOf="@+id/KoomoConstraint"
+                app:layout_constraintEnd_toEndOf="@id/KoomoConstraint"
+                app:layout_constraintBottom_toBottomOf="@id/KoomoConstraint"/>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ExtraThree"
+            android:layout_width="10dp"
+            android:layout_height="60dp"
+            android:background="@drawable/extra"
+            android:layout_marginTop="220dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toTopOf="@+id/TransactionConstraint"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/JackConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/extract"
+            android:layout_marginTop="220dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toTopOf="@id/TransactionConstraint"
+            app:layout_constraintStart_toEndOf="@id/ExtraThree">
+
+            <ImageView
+                android:id="@+id/JackImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/jack"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintTop_toTopOf="@id/JackConstraint"
+                app:layout_constraintStart_toStartOf="@id/JackConstraint"
+                app:layout_constraintBottom_toBottomOf="@id/JackConstraint"/>
+            <TextView
+                android:id="@+id/JackName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jack Rome"
+                android:textSize="20sp"
+                android:textColor="#0d0c0b"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintTop_toTopOf="@+id/JackConstraint"
+                app:layout_constraintStart_toEndOf="@+id/JackImage"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 Nov,2019"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/JackName"
+                app:layout_constraintStart_toEndOf="@+id/JackImage"
+                app:layout_constraintBottom_toBottomOf="@id/JackConstraint"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_baseline_arrow_drop_up_24"
+                android:layout_marginEnd="60dp"
+                android:layout_marginStart="60dp"
+                app:layout_constraintTop_toTopOf="@+id/JackConstraint"
+                app:layout_constraintEnd_toEndOf="@+id/JackConstraint"
+                app:layout_constraintBottom_toBottomOf="@+id/JackConstraint"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$80.00"
+                android:textColor="#fe4a4a"
+                android:textSize="15sp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toTopOf="@+id/JackConstraint"
+                app:layout_constraintEnd_toEndOf="@id/JackConstraint"
+                app:layout_constraintBottom_toBottomOf="@id/JackConstraint"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

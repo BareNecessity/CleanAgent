@@ -39,6 +39,7 @@
         android:layout_height="wrap_content"
         android:text="Sign Up"
         android:textSize="20sp"
+        android:textColor="#ffffff"
         android:textAllCaps="false"
         android:background="@drawable/sign"
         android:layout_marginTop="80dp"

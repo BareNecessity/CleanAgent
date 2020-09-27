@@ -125,6 +125,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Sign Up"
+            android:textColor="#ffffff"
             android:background="@drawable/sign"
             android:textAllCaps="false"
             android:layout_marginTop="50dp"
