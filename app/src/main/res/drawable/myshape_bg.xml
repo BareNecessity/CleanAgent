@@ -4,8 +4,8 @@
     <corners
 
         android:bottomRightRadius="0dp"
-        android:topLeftRadius="80dp"
-        android:topRightRadius="80dp"
+        android:topLeftRadius="60dp"
+        android:topRightRadius="60dp"
         android:bottomLeftRadius="0dp"/>
     <padding
         android:bottom="1dp"
