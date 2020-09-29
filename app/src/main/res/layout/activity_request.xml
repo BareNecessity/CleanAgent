@@ -247,13 +247,13 @@
             android:id="@+id/TrouserDetails"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
             android:text="(wash and iron)"
             android:textStyle="italic"
             app:layout_constraintStart_toEndOf="@+id/Trouser"
-            app:layout_constraintTop_toBottomOf="@+id/Gender" />
+            app:layout_constraintTop_toTopOf="@+id/Trouser"
+            app:layout_constraintBottom_toBottomOf="@+id/Trouser"/>
 
         <TextView
             android:id="@+id/TrouserPrice"
@@ -261,11 +261,11 @@
             android:layout_height="wrap_content"
             android:text="3,000"
             android:textSize="17sp"
-            android:layout_marginTop="5dp"
             android:layout_marginEnd="40dp"
             android:layout_marginStart="40dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Gender"/>
+            app:layout_constraintTop_toTopOf="@id/Trouser"
+            app:layout_constraintBottom_toBottomOf="@id/Trouser"/>
 
         <TextView
             android:id="@+id/Shirts"
@@ -285,11 +285,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="(wash and iron)"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             app:layout_constraintStart_toEndOf="@id/Shirts"
-            app:layout_constraintTop_toBottomOf="@id/TrouserDetails"/>
+            app:layout_constraintTop_toTopOf="@id/Shirts"
+            app:layout_constraintBottom_toBottomOf="@id/Shirts"/>
 
         <TextView
             android:id="@+id/ShirtPrice"
@@ -297,10 +297,10 @@
             android:layout_height="wrap_content"
             android:text="2,400"
             android:textSize="17sp"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="40dp"
             android:layout_marginEnd="40dp"
-            app:layout_constraintTop_toBottomOf="@+id/TrouserPrice"
+            app:layout_constraintTop_toTopOf="@id/Shirts"
+            app:layout_constraintBottom_toBottomOf="@id/Shirts"
             app:layout_constraintEnd_toEndOf="parent"/>
 
 
@@ -321,10 +321,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="(iron only)"
-            android:layout_marginTop="14dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            app:layout_constraintTop_toBottomOf="@+id/ShirtDetails"
+            app:layout_constraintTop_toTopOf="@id/Natives"
+            app:layout_constraintBottom_toBottomOf="@id/Natives"
             app:layout_constraintStart_toEndOf="@+id/Natives"/>
 
         <TextView
@@ -333,10 +333,10 @@
             android:layout_height="wrap_content"
             android:text="1200"
             android:textSize="17sp"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="40dp"
             android:layout_marginEnd="40dp"
-            app:layout_constraintTop_toBottomOf="@+id/ShirtPrice"
+            app:layout_constraintTop_toTopOf="@id/Natives"
+            app:layout_constraintBottom_toBottomOf="@id/Natives"
             app:layout_constraintEnd_toEndOf="parent"/>
 
         <TextView
@@ -356,21 +356,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="(wash only"
-            android:layout_marginTop="15dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             app:layout_constraintStart_toEndOf="@+id/Singlets"
-            app:layout_constraintTop_toBottomOf="@+id/NativeDetails"/>
+            app:layout_constraintTop_toTopOf="@id/Singlets"
+            app:layout_constraintBottom_toBottomOf="@id/Singlets"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1,000"
             android:textSize="17sp"
-            android:layout_marginTop="10dp"
             android:layout_marginStart="40dp"
             android:layout_marginEnd="40dp"
-            app:layout_constraintTop_toBottomOf="@+id/NativePrice"
+            app:layout_constraintTop_toTopOf="@id/Singlets"
+            app:layout_constraintBottom_toBottomOf="@id/Singlets"
             app:layout_constraintEnd_toEndOf="parent"/>
         
 
@@ -405,10 +405,10 @@
             android:layout_height="wrap_content"
             android:text="#6,600"
             android:textSize="17sp"
-            android:layout_marginTop="10dp"
             android:layout_marginEnd="40dp"
             android:layout_marginStart="40dp"
-            app:layout_constraintTop_toTopOf="@+id/Total"
+            app:layout_constraintTop_toTopOf="@+id/Subtotal"
+            app:layout_constraintBottom_toBottomOf="@id/Subtotal"
             app:layout_constraintEnd_toEndOf="parent"/>
 
         <TextView
@@ -430,9 +430,9 @@
             android:textSize="17sp"
             android:layout_marginEnd="40dp"
             android:layout_marginStart="40dp"
-            app:layout_constraintTop_toBottomOf="@+id/SubtotalPrice"
+            app:layout_constraintTop_toTopOf="@id/Discount"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="@+id/Total"/>
+            app:layout_constraintBottom_toBottomOf="@+id/Discount"/>
 
 
 
