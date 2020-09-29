@@ -6,270 +6,382 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".WorkOut">
-    
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="23sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFFFFF"
         android:layout_marginTop="70dp"
-        android:layout_marginBottom="90dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/WorkoutConstraint"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/workout"
-            android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginBottom="450dp"
-            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="500dp"
+            android:background="@drawable/workout"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
                 android:id="@+id/WorkoutText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
                 android:text="WorkOut"
                 android:textSize="23sp"
                 android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/ClockWorkout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ic_baseline_access_time_24"
-                android:layout_marginTop="10dp"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
-                app:layout_constraintTop_toBottomOf="@id/WorkoutText"
-                app:layout_constraintStart_toStartOf="parent"/>
+                android:background="@drawable/ic_baseline_access_time_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/WorkoutText" />
+
             <TextView
                 android:id="@+id/ExercisePeriod"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
                 android:text="Per Exercise Period"
                 android:textSize="18sp"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                app:layout_constraintTop_toBottomOf="@+id/WorkoutText"
-                app:layout_constraintStart_toEndOf="@+id/ClockWorkout"/>
+                app:layout_constraintStart_toEndOf="@+id/ClockWorkout"
+                app:layout_constraintTop_toBottomOf="@+id/WorkoutText" />
 
             <ImageView
                 android:id="@+id/MusicNote"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ic_baseline_music_note_24"
-                android:layout_marginTop="10dp"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
-                app:layout_constraintTop_toBottomOf="@+id/ClockWorkout"
-                app:layout_constraintStart_toStartOf="parent"/>
+                android:background="@drawable/ic_baseline_music_note_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ClockWorkout" />
 
             <TextView
                 android:id="@+id/BackgroundMusic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
                 android:text="Background Music"
                 android:textSize="18sp"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                app:layout_constraintTop_toBottomOf="@id/ExercisePeriod"
-                app:layout_constraintStart_toEndOf="@+id/MusicNote"/>
+                app:layout_constraintStart_toEndOf="@+id/MusicNote"
+                app:layout_constraintTop_toBottomOf="@id/ExercisePeriod" />
 
 
             <SeekBar
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
-                app:layout_constraintTop_toBottomOf="@id/ExercisePeriod"
-                app:layout_constraintEnd_toEndOf="parent"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ExercisePeriod" />
 
             <ImageView
                 android:id="@+id/SelectMusic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ic_baseline_music_video_24"
-                android:layout_marginTop="10dp"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
-                app:layout_constraintTop_toBottomOf="@+id/MusicNote"
-                app:layout_constraintStart_toStartOf="parent"/>
+                android:background="@drawable/ic_baseline_music_video_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/MusicNote" />
 
             <TextView
                 android:id="@+id/PickMusic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
                 android:text="Select Music"
                 android:textSize="18sp"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                app:layout_constraintTop_toBottomOf="@id/BackgroundMusic"
-                app:layout_constraintStart_toEndOf="@+id/SelectMusic"/>
+                app:layout_constraintStart_toEndOf="@+id/SelectMusic"
+                app:layout_constraintTop_toBottomOf="@id/BackgroundMusic" />
 
 
             <ImageView
                 android:id="@+id/Coffee"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ic_baseline_cake_24"
-                android:layout_marginTop="10dp"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
-                app:layout_constraintTop_toBottomOf="@+id/SelectMusic"
-                app:layout_constraintStart_toStartOf="parent"/>
+                android:background="@drawable/ic_baseline_cake_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SelectMusic" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
                 android:text="Rest Time"
                 android:textSize="18sp"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                app:layout_constraintTop_toBottomOf="@+id/PickMusic"
-                app:layout_constraintStart_toEndOf="@+id/Coffee"/>
-
-
-
-
-
+                app:layout_constraintStart_toEndOf="@+id/Coffee"
+                app:layout_constraintTop_toBottomOf="@+id/PickMusic" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/GeneralConstraint"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/workout"
-            android:layout_marginTop="250dp"
-            android:layout_marginBottom="20dp"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="300dp"
             android:layout_marginEnd="20dp"
-            app:layout_constraintTop_toBottomOf="@id/WorkoutConstraint"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/workout"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/WorkoutConstraint">
 
             <TextView
                 android:id="@+id/General"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
                 android:text="General"
                 android:textSize="23sp"
                 android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/Watermark"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ic_baseline_branding_watermark_24"
-                android:layout_marginTop="10dp"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
-                app:layout_constraintTop_toBottomOf="@id/General"
-                app:layout_constraintStart_toStartOf="parent"/>
+                android:background="@drawable/ic_baseline_branding_watermark_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/General" />
 
             <TextView
                 android:id="@+id/Language"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
                 android:text="Language"
                 android:textSize="18sp"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                app:layout_constraintTop_toBottomOf="@+id/General"
-                app:layout_constraintStart_toEndOf="@id/Watermark"/>
+                app:layout_constraintStart_toEndOf="@id/Watermark"
+                app:layout_constraintTop_toBottomOf="@+id/General" />
+
             <ImageView
                 android:id="@+id/NotificationBell"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ic_baseline_notifications_24"
-                android:layout_marginTop="10dp"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
-                app:layout_constraintTop_toBottomOf="@+id/Watermark"
-                app:layout_constraintStart_toStartOf="parent"/>
+                android:background="@drawable/ic_baseline_notifications_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Watermark" />
 
             <TextView
                 android:id="@+id/Remind"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
                 android:text="Reminder"
                 android:textSize="18sp"
-                android:layout_marginTop="10dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                app:layout_constraintTop_toBottomOf="@id/Language"
-                app:layout_constraintStart_toEndOf="@+id/NotificationBell"/>
+                app:layout_constraintStart_toEndOf="@+id/NotificationBell"
+                app:layout_constraintTop_toBottomOf="@id/Language" />
 
             <SeekBar
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
-                app:layout_constraintTop_toBottomOf="@+id/Language"
-                app:layout_constraintEnd_toEndOf="parent"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Language" />
 
             <ImageView
                 android:id="@+id/Achieve"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ic_baseline_filter_vintage_24"
-                android:layout_marginTop="10dp"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
-                app:layout_constraintTop_toBottomOf="@id/NotificationBell"
-                app:layout_constraintStart_toStartOf="parent"/>
+                android:background="@drawable/ic_baseline_filter_vintage_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/NotificationBell" />
+
+            <TextView
+                android:id="@+id/TextAchievement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Achievement"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/Achieve"
+                app:layout_constraintTop_toBottomOf="@+id/Remind" />
+
+            <ImageView
+                android:id="@+id/Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/ic_baseline_filter_list_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Achieve" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Achievement"
-                android:textSize="18sp"
-                android:layout_marginTop="10dp"
                 android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
-                app:layout_constraintTop_toBottomOf="@+id/Remind"
-                app:layout_constraintStart_toEndOf="@+id/Achieve"/>
+                android:text="Metric"
+                android:textSize="18dp"
+                app:layout_constraintStart_toEndOf="@+id/Filter"
+                app:layout_constraintTop_toBottomOf="@+id/TextAchievement" />
 
 
+            <TextView
+                android:id="@+id/More"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="More"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Filter" />
 
 
+            <ImageView
+                android:id="@+id/LikeUs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/ic_baseline_thumb_up_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/More" />
+
+            <TextView
+                android:id="@+id/LikeUsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Like us"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@id/LikeUs"
+                app:layout_constraintTop_toBottomOf="@+id/More" />
 
 
+            <ImageView
+                android:id="@+id/MoreAppDownload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/ic_baseline_apps_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LikeUs" />
+
+            <TextView
+                android:id="@+id/TextMoreApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="More App"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/MoreAppDownload"
+                app:layout_constraintTop_toBottomOf="@id/LikeUsText" />
+
+            <ImageView
+                android:id="@+id/ChooseMusic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/ic_baseline_share_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/MoreAppDownload" />
 
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Choose Music"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/ChooseMusic"
+                app:layout_constraintTop_toBottomOf="@+id/TextMoreApp" />
 
 
-"
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
