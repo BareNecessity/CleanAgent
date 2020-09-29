@@ -43,13 +43,12 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/OrderDetails"
         android:layout_width="match_parent"
-        android:layout_height="220dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/order"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Truck">
 
@@ -57,8 +56,8 @@
             android:id="@+id/OrderID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
             android:text="Order ID"
             android:textSize="17sp"
@@ -67,6 +66,7 @@
             app:layout_constraintTop_toTopOf="@+id/OrderDetails" />
 
         <View
+            android:id="@+id/View1"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginTop="23dp"
@@ -78,14 +78,13 @@
             android:id="@+id/IDNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="160dp"
-            android:layout_marginLeft="160dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
             android:text="0082734"
             android:textSize="17sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/OrderDetails"
-            app:layout_constraintStart_toEndOf="@+id/OrderID"
             app:layout_constraintTop_toTopOf="@+id/OrderDetails" />
 
 
@@ -94,15 +93,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:text="Total Amount"
             android:textSize="17sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/OrderID" />
+            app:layout_constraintTop_toTopOf="@+id/View1" />
 
         <View
+            android:id="@+id/View2"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginTop="15dp"
@@ -113,30 +113,45 @@
             android:id="@+id/TextTotalPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="138dp"
-            android:layout_marginLeft="110dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
             android:text="#6,600"
             android:textSize="17sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/TotalAmount"
-            app:layout_constraintTop_toBottomOf="@+id/IDNumber" />
+            app:layout_constraintTop_toTopOf="@+id/View1" />
 
         <TextView
             android:id="@+id/PickupDateAndTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:text="Pickup Date and Time"
             android:textSize="17sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/TotalAmount" />
+            app:layout_constraintTop_toTopOf="@+id/View2" />
+
+
+
+        <TextView
+            android:id="@+id/DateForPickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:text="Wed, 3 Dec, 2019\n               02:00pm"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/View2"/>
 
         <View
+            android:id="@+id/View3"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginTop="23dp"
@@ -144,42 +159,33 @@
             app:layout_constraintTop_toBottomOf="@+id/PickupDateAndTime" />
 
         <TextView
-            android:id="@+id/DateForPickup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:text="Wed, 3 Dec, 2019\n               02:00pm"
-            android:textSize="17sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/PickupDateAndTime"
-            app:layout_constraintTop_toBottomOf="@+id/TextTotalPrice" />
-
-        <TextView
             android:id="@+id/PaymentMethod"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             android:layout_marginEnd="20dp"
             android:text="Payment Method"
             android:textSize="17sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/PickupDateAndTime" />
+            app:layout_constraintTop_toTopOf="@+id/View3"
+            app:layout_constraintBottom_toBottomOf="@+id/OrderDetails"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="39dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             android:text="Cash on Delivery"
             android:textSize="17sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/PaymentMethod"
-            app:layout_constraintTop_toBottomOf="@+id/DateForPickup" />
+            app:layout_constraintTop_toTopOf="@+id/View3"
+            app:layout_constraintBottom_toBottomOf="@+id/OrderDetails"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
