@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MixedFruits"></activity>
+        <activity android:name=".Notary"></activity>
+        <activity android:name=".MixedFruits" />
         <activity android:name=".WorkOut" />
         <activity android:name=".DoctorProfiles" />
         <activity android:name=".FinancialHelp" />

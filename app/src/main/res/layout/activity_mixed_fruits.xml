@@ -44,8 +44,8 @@
 
     <ImageView
         android:id="@+id/FruitBasket"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="@drawable/fruits"
         app:layout_constraintTop_toBottomOf="@+id/MixFruitsText"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,8 +60,8 @@
         android:textStyle="bold"
         android:textColor="#0d0c0b"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         app:layout_constraintTop_toBottomOf="@+id/FruitBasket"
         app:layout_constraintStart_toStartOf="parent"/>
 
@@ -70,21 +70,73 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ordered 500G + 500G"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         app:layout_constraintTop_toBottomOf="@+id/BestMixFruit"
         app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
+        android:id="@+id/AboutMixedFruits"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="About"
         android:textSize="18sp"
-        android:textColor=""
-
-
+        android:textColor="#f6ae7e"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         app:layout_constraintTop_toBottomOf="@+id/OrderWeight"
         app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/ReviewFruits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reviews"
+        android:textSize="18sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintTop_toTopOf="@id/AboutMixedFruits"
+        app:layout_constraintBottom_toBottomOf="@id/AboutMixedFruits"
+        app:layout_constraintStart_toEndOf="@+id/AboutMixedFruits"/>
+
+    <TextView
+        android:id="@+id/DetailsFruit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        android:textSize="18sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintTop_toTopOf="@+id/AboutMixedFruits"
+        app:layout_constraintBottom_toBottomOf="@id/AboutMixedFruits"
+        app:layout_constraintStart_toEndOf="@+id/ReviewFruits"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top Sales"
+        android:textSize="18sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintTop_toTopOf="@id/AboutMixedFruits"
+        app:layout_constraintBottom_toBottomOf="@id/AboutMixedFruits"
+        app:layout_constraintStart_toEndOf="@id/DetailsFruit"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="There are so many variations of passages of lorems is\nipsium there available, but the majority there haven't\nsuffered alterations in some form by their injected\nhumors orrandomised words which don't look even\nslightly believable. If you are going to use a passage\nLorem Ipsium you will nedd."
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/AboutMixedFruits"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    
+
 
 
 
