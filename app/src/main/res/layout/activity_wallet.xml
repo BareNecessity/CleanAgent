@@ -180,6 +180,7 @@
         android:textColor="#1f2120"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/History"/>
 

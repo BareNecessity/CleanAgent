@@ -63,7 +63,7 @@
         android:textSize="45sp"
         android:textStyle="bold"
         android:textColor="#ffffff"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="0dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         app:layout_constraintTop_toBottomOf="@id/CurrentBalanceText"
@@ -74,31 +74,34 @@
         android:layout_width="40dp"
         android:layout_height="50dp"
         android:background="@drawable/ic_baseline_arrow_drop_up_24"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="80dp"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         app:layout_constraintTop_toBottomOf="@id/BalanceFigure"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/TransactionConstraint"/>
 
     <TextView
         android:id="@+id/UpBalance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="90dp"
         android:text="$ 12540.00"
         android:textColor="#ffffff"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/ArrowUp"
-        app:layout_constraintTop_toBottomOf="@+id/BalanceFigure" />
+        app:layout_constraintTop_toBottomOf="@+id/BalanceFigure"
+        app:layout_constraintBottom_toTopOf="@id/TransactionConstraint"/>
 
     <ImageView
         android:id="@+id/DownArrowImage"
         android:layout_width="40dp"
         android:layout_height="50dp"
         android:background="@drawable/ic_baseline_arrow_drop_down_24"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="80dp"
         app:layout_constraintTop_toBottomOf="@+id/BalanceFigure"
-        app:layout_constraintStart_toEndOf="@id/UpBalance"/>
+        app:layout_constraintStart_toEndOf="@id/UpBalance"
+        app:layout_constraintBottom_toTopOf="@id/TransactionConstraint"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -106,16 +109,17 @@
         android:text="$ 6960.00"
         android:textSize="20sp"
         android:textColor="#ffffff"
-        android:layout_marginTop="37dp"
+        android:layout_marginTop="95dp"
         app:layout_constraintTop_toBottomOf="@id/BalanceFigure"
-        app:layout_constraintStart_toEndOf="@id/DownArrowImage"/>
+        app:layout_constraintStart_toEndOf="@id/DownArrowImage"
+        app:layout_constraintBottom_toTopOf="@id/TransactionConstraint"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/TransactionConstraint"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#ffffff"
-        android:layout_marginTop="360dp"
+        android:layout_marginTop="420dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
 
@@ -125,7 +129,7 @@
             android:text="Transaction"
             android:textColor="#0d0c0b"
             android:textSize="20sp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             app:layout_constraintTop_toTopOf="@+id/TransactionConstraint"
@@ -135,7 +139,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_baseline_linear_scale_24"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="30dp"
             android:layout_marginStart="30dp"
             app:layout_constraintTop_toTopOf="@+id/TransactionConstraint"
@@ -146,17 +150,18 @@
             android:layout_width="10dp"
             android:layout_height="60dp"
             android:background="@drawable/extra"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="80dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             app:layout_constraintTop_toTopOf="@+id/TransactionConstraint"
             app:layout_constraintStart_toStartOf="parent"/>
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/JohnConstraint"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/extract"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="80dp"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             app:layout_constraintTop_toTopOf="@id/TransactionConstraint"
@@ -227,7 +232,7 @@
             android:layout_width="10dp"
             android:layout_height="60dp"
             android:background="@drawable/extra"
-            android:layout_marginTop="140dp"
+            android:layout_marginTop="160dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             app:layout_constraintTop_toTopOf="@+id/TransactionConstraint"
@@ -240,7 +245,7 @@
             android:layout_height="60dp"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:layout_marginTop="140dp"
+            android:layout_marginTop="160dp"
             android:background="@drawable/extract"
             app:layout_constraintStart_toEndOf="@id/ExtraTwo"
             app:layout_constraintTop_toTopOf="@id/TransactionConstraint">
@@ -311,7 +316,7 @@
             android:layout_width="10dp"
             android:layout_height="60dp"
             android:background="@drawable/extra"
-            android:layout_marginTop="220dp"
+            android:layout_marginTop="240dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             app:layout_constraintTop_toTopOf="@+id/TransactionConstraint"
@@ -322,7 +327,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/extract"
-            android:layout_marginTop="220dp"
+            android:layout_marginTop="240dp"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             app:layout_constraintTop_toTopOf="@id/TransactionConstraint"

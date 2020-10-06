@@ -379,6 +379,53 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
+        <ImageView
+            android:id="@+id/base_pulse_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_pulse"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@id/GeneralConstraint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_flag"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            app:layout_constraintTop_toTopOf="@+id/base_pulse_img"
+            app:layout_constraintBottom_toBottomOf="@+id/base_pulse_img"
+            app:layout_constraintStart_toEndOf="@+id/base_pulse_img"/>
+
+
+        <ImageView
+            android:id="@+id/base_settings"
+            android:layout_width="29dp"
+            android:layout_height="33dp"
+            android:background="@drawable/ic_gear"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/base_pulse_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/base_pulse_img" />
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_square"
+            android:layout_marginEnd="60dp"
+            android:layout_marginStart="60dp"
+            app:layout_constraintTop_toTopOf="@+id/base_pulse_img"
+            app:layout_constraintBottom_toBottomOf="@+id/base_pulse_img"
+            app:layout_constraintEnd_toStartOf="@+id/base_settings"/>
+
+
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

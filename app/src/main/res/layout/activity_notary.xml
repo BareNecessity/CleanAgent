@@ -4,7 +4,138 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#216cb8"
     tools:context=".Notary">
+
+
+    <TextView
+        android:id="@+id/base_signer_added_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signer Added!"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/base_list_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List of Signers for your notarization"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/base_signer_added_tv"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/background_edit_signer_cl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signer_added"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/base_list_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+
+        <ImageView
+            android:id="@+id/base_profile_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_user"
+            android:layout_marginTop="40dp"
+            app:layout_constraintTop_toTopOf="@+id/background_edit_signer_cl"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        
+        
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/background_edit_signers_button_cl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_signer_button"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginEnd="65dp"
+            app:layout_constraintTop_toBottomOf="@id/base_profile_img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/background_edit_signer_cl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="EDIT SIGNER"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toTopOf="@id/background_edit_signers_button_cl"
+                app:layout_constraintStart_toStartOf="@+id/background_edit_signers_button_cl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/background_edit_signers_button_cl"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/additional_signers_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Additional Signers?"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/background_edit_signer_cl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please add all of your signers before\n                        continuing"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/additional_signers_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/complete_button"
+        android:text="COMPLETE"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
 
 
 
